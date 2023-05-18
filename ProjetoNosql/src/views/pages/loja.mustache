@@ -1,0 +1,29 @@
+
+    <diV class="container">
+    {{>partials/header}}
+        <h2>Novo Titulo</h2>
+        <fieldset>
+           <legend> Adicionar Usuário</legend>
+           {{#message}}
+             <p>Adicionado com sucesso!</p>
+           {{/message}}
+           <form method="POST" action="/newUser">
+              <input type="text" name="firstName" placeholder="Digite seu nome"/>
+              <input type="text" name="lastName" placeholder="Digite seu sobrenome"/>
+              <input type="email" name="email" placeholder="Digite seu email"/>
+              <input type="number" name="age" placeholder="Digite sua idade"/>
+              <input type="text" name="interests" placeholder="Digite interesses (separados com virgulas)"/>
+              <input type="submit" value="Inserir"/>
+           </form>
+        </fieldset>
+        <fieldset>
+            <legend> Listar Usuario</legend>
+            <ul>
+              {{#users}}
+                 <li>{{name.firstName}} - {{age}} anos <a href="/usuario/{{id}}/createIdade"> + 1 ano</a></li>
+              {{/users}}
+            </ul>
+        </fieldset>
+           {{>partials/footer}}
+       </diV>
+   

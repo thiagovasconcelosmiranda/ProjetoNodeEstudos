@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 95%;
+    height: 110vh;
+    background-color: #dbd9d7;
+
+}
+h2{
+    padding: 20px;
+}
+
+fieldset{
+    padding: 10px;
+    height: auto;
+}
+legend{
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+form {
+    padding: 20px;
+    width: 15%;
+    display: block;
+}
+
+input{
+  width: 200px;
+  padding: 8px;
+  margin: 5px;
+
+}
+
+ul{
+    padding: 20px;
+    overflow-y: scroll;
+    width: 95%;
+    
+}
+footer{
+    height: 100px;
+}
+
+footer p{
+    padding: 20px;
+}
